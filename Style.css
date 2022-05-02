@@ -1,3 +1,4 @@
+/*Elimine varias clases que eran del header viejo*/
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +16,7 @@ Footer {
 }
 
 li {
-    padding: 0px 3rem;
+    padding: 0px 2rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
@@ -35,21 +36,22 @@ p {
     margin-bottom: 1rem;
     font-family: 'Rubik', sans-serif;
 }
-a{
-    color:white;
-}
+
 
 
 .animacionTamanio:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .animacionDuracionTamanio{
     transition-property: all;
     transition-duration: 1.5s;
 }
-
-a:hover{
-    color: orange;
+/*Use el important sino no cambia el color en el nav*/
+.aColor:hover{
+    color: orange !important;
+}
+.aBlanco{
+    color:white !important;
 }
 
 /*contenedor de toda la pagina*/
@@ -62,11 +64,6 @@ a:hover{
         "footer footer footer";
 }
 
-.gridHeaderEnd {
-    grid: display;
-    justify-items: end;
-
-}
 
 .logo {
     width: 100px;
@@ -99,30 +96,13 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*con flex lo pongo en el centro y al final*/
-.headerLinks {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-}
-
 .Footer {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.navLogo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.navLinks {
-    width: 100%;
-    display: flex;
-}
 .imgRedes{
     width:30px;
     height:auto;
@@ -130,6 +110,7 @@ a:hover{
 }
 
 /*al sticky lo hice una grilla para separar icono y los links de textos*/
+/*Al usar bootstrap no necesito dividir con un grid ya que bootstrap lo hace solo*/
 .sticky {
     grid-area: header;
     position: sticky;
@@ -137,17 +118,10 @@ a:hover{
     width: 100%;
     top: 0px;
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
 
-.menu {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 /*para ordenar las redes sociales que esta en el footer*/
 .redes {
@@ -157,7 +131,7 @@ a:hover{
     align-items: center;
     flex-wrap: wrap;
 }
-
+/*Cambiar el tipo de letra del header*/
 .font-rem-header {
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
@@ -196,6 +170,11 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
+}
+/*esta clase para centrar las imagenes de redes sociales*/
+.NavFooter{
+    display:grid;
+    align-items: center;
 }
 
 .bodyPages {
@@ -272,26 +251,11 @@ a:hover{
     }
 
 
-    .sticky {
-        grid-area: header;
-        position: sticky;
-        background-color: black;
-        width: 100%;
-        top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
-    }
-
     #videocss {
         width: 600px;
         height: 400px;
     }
 
-    li {
-        padding: 0px 0.5rem;
-
-    }
 
 
 
@@ -307,35 +271,10 @@ a:hover{
     
 
 
-    .sticky {
-        grid-area: header;
-        position: sticky;
-        background-color: black;
-        width: 100%;
-        top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
-    }
-
     #videocss {
         width: 600px;
         height: 400px;
     }
-    .headerLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    li {
-        padding: 0px 0.5rem;
-
-    }
-
-
-
 
 }
 
@@ -347,39 +286,10 @@ a:hover{
         gap: 1.5rem;
     }
 
-    .logo {
-        width: 150px;
-        height: auto;
-
-    }
-
-    .sticky {
-        grid-area: header;
-        position: sticky;
-        background-color: black;
-        width: 100%;
-        top: 0px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
-    }
-    .headerLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
     .tituloInicio {
         font-size: 1.5rem;
     }
 
-    .menu {
-
-        display:flex;
-        flex-direction: column;
-        align-content: center;
-    }
 
     #videocss {
         width: 500px;
@@ -417,16 +327,6 @@ a:hover{
         gap: 1.5rem;
     }
 
-    .sticky {
-        grid-area: header;
-        position: sticky;
-        background-color: black;
-        width: 100%;
-        top: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
     .pieDePagina {
         grid-area: footer;
         background-color: black;
@@ -437,12 +337,7 @@ a:hover{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .headerLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
+
     .redes{
         display:flex;
         flex-direction: column;
@@ -456,11 +351,6 @@ a:hover{
 
 
 
-    .logo {
-        width: 100px;
-        height: auto;
-
-    }
     p {
         font-size: 0.8rem;
         margin-top: 0;
@@ -490,34 +380,10 @@ a:hover{
         gap: 1.5rem;
     }
 
-
-    .sticky {
-        grid-area: header;
-        position: sticky;
-        background-color: black;
-        width: 100%;
-        top: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .headerLinks {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
     .tituloInicio {
         font-size: 1rem;
     }
 
-    .menu {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .redes{
         display:flex;
         flex-direction: column;
