@@ -35,6 +35,22 @@ p {
     margin-bottom: 1rem;
     font-family: 'Rubik', sans-serif;
 }
+a{
+    color:white;
+}
+
+
+.animacionTamanio:hover{
+    transform: scale(1.2);
+}
+.animacionDuracionTamanio{
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+a:hover{
+    color: orange;
+}
 
 /*contenedor de toda la pagina*/
 .gridContainer {
@@ -288,6 +304,7 @@ p {
         grid-auto-rows: 600px;
         gap: 1.5rem;
     }
+    
 
 
     .sticky {
@@ -304,6 +321,12 @@ p {
     #videocss {
         width: 600px;
         height: 400px;
+    }
+    .headerLinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     li {
