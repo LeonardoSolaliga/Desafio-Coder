@@ -18,6 +18,9 @@ Footer {
 li {
     padding: 0px 2rem;
 }
+a{
+    text-decoration: none;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
 
@@ -48,10 +51,13 @@ p {
 }
 /*Use el important sino no cambia el color en el nav*/
 .aColor:hover{
-    color: orange !important;
+    color: orange;
 }
 .aBlanco{
-    color:white !important;
+    color:white;
+}
+a:visited{
+    color:orangered;
 }
 
 /*contenedor de toda la pagina*/
@@ -304,10 +310,6 @@ p {
         margin-bottom: 2rem;
     }
 
-    li {
-        padding: 0px 7rem;
-
-    }
 
 
 
@@ -361,9 +363,7 @@ p {
 
     
 
-    li {
-        padding: 0px;
-    }
+
 
 }
 
@@ -408,9 +408,7 @@ p {
         height:auto;
     
     }
-    li {
-        padding: 0px;
-    }
+
     p {
         font-size: 0.7rem;
         margin-top: 0;
