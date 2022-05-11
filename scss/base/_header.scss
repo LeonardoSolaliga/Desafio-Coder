@@ -1,0 +1,59 @@
+@import "../components/clases";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
+
+/*Empieza el header*/
+header {
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        font-size: 1.5rem;
+                        font-family: 'Rubik', sans-serif;
+                        color:white;
+
+                        a {
+                            &:visited{
+                                color: orangered
+                            }
+
+                            &:hover {
+                                color: orange;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.sticky {
+    grid-area: header;
+    position: sticky;
+    background-color: black;
+    width: 100%;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.animacionTamanio:hover {
+    transform: scale(1.1);
+}
+
+.animacionDuracionTamanio {
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/*Termina el header*/

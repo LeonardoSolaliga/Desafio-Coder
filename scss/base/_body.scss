@@ -1,0 +1,51 @@
+/* Empieza el body*/
+@import "../components/clases";
+@import "../components/listas";
+
+main{
+    div{
+        text-align: center;
+    }
+
+}
+.tituloInicio {
+    color: #00ADB5;
+    font-size: 2.3rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+.agregarSangria {
+    text-indent: 4rem;
+    text-align: left;
+    padding: 1rem 1rem;
+}
+.font-rem-inicio {
+    color: #00ADB5;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.gridMainInicio {
+    grid-area: section;
+}
+
+.bodyInicio {
+    background-image: url("../Images/fondo-gym2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#videocss{
+    width: nth($videowidth,1);
+    height: nth($videoheigth,1);
+}
+
+
+
+
+/*Termina el body*/

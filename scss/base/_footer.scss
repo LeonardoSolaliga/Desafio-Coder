@@ -1,0 +1,40 @@
+@import "../components/clases";
+/*Empieza el footer*/
+
+Footer {
+    width: 100%;
+}
+
+.pieDePagina {
+    grid-area: footer;
+    background-color: black;
+    width: 100%;
+    padding: 2rem 0px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+.Footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.NavFooter{
+    display:grid;
+    align-items: center;
+}
+.redes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imgRedes{
+    width:30px;
+    height:auto;
+
+}
+
+
+/*Termina el footer*/

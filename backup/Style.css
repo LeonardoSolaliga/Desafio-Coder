@@ -21,6 +21,13 @@ li {
 a{
     text-decoration: none;
 }
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap');
 
@@ -245,7 +252,6 @@ a:visited{
     font-family: 'Rubik', sans-serif;
     margin-top: 1rem;
     margin-bottom: 1rem;
-
 }
 
 @media screen and (max-width: 1087px) {

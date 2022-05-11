@@ -1,0 +1,208 @@
+@import "../components/listas";
+@media screen and (max-width: 1087px) {
+    .gridGaleria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 600px;
+        gap: 1.5rem;
+    }
+
+
+    #videocss {
+        width: nth($videowidth,2);
+        height: nth($videoheigth,2);
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 960px) {
+    .gridGaleria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 600px;
+        gap: 1.5rem;
+    }
+    #videocss {
+        width: nth($videowidth,2);
+        height: nth($videoheigth,2);
+    }
+    
+
+}
+
+@media screen and (max-width: 759px) {
+    .gridGaleria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 500px;
+        gap: 1.5rem;
+    }
+
+    .tituloInicio {
+        font-size: 1.5rem;
+    }
+    .font-rem-inicio {
+        color: #00ADB5;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+    #videocss {
+        width: nth($videowidth,3);
+        height: nth($videoheigth,3);
+    }
+    header{
+        nav{
+            div{
+                div{
+                    ul{
+                        li{
+                            color: #00ADB5;
+                            text-align: center;
+                            font-size: 1rem;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                    }
+                }
+
+    
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+    #videocss {
+        width: nth($videowidth,4);
+        height: nth($videoheigth,4);
+    }
+
+    .gridGaleria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+        gap: 1.5rem;
+    }
+
+    .pieDePagina {
+        grid-area: footer;
+        background-color: black;
+        width: 100%;
+        padding: 2rem 0px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .redes{
+        display:flex;
+        flex-direction: column;
+    }
+    
+
+    .tituloInicio {
+        font-size: 1rem;
+    }
+
+
+
+
+    p {
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: 'Rubik', sans-serif;
+    }
+
+
+    
+
+
+
+}
+
+@media screen and (max-width: 334px) {
+    #videocss {
+        width: nth($videowidth,5);
+        height: nth($videoheigth,5);
+    }
+
+    .gridGaleria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 320px;
+        gap: 1.5rem;
+    }
+
+    .tituloInicio {
+        font-size: 1rem;
+    }
+    .agregarSangria {
+        text-indent: 1rem;
+    }
+
+    .font-rem-inicio {
+        color: #00ADB5;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .redes{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .logo {
+        width: 100px;
+        height: auto;
+
+    }
+    header{
+        nav{
+            div{
+                div{
+                    ul{
+                        li{
+                            color: #00ADB5;
+                            text-align: center;
+                            font-size: 1rem;
+                            font-family: 'Rubik', sans-serif;
+                        }
+                    }
+                }
+
+    
+            }
+        }
+    }
+    .imgRedes{
+        width:20px;
+        height:auto;
+    
+    }
+
+    p {
+        font-size: 0.7rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: 'Rubik', sans-serif;
+    }
+
+}
