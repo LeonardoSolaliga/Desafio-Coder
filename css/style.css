@@ -43,6 +43,8 @@ p {
 header nav div div ul li {
   font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
+}
+header nav div div ul li a {
   color: white;
 }
 header nav div div ul li a:visited {
