@@ -1,7 +1,7 @@
 /* Empieza el body*/
 @import "../components/clases";
 @import "../components/listas";
-
+@import "../components/mapa";
 main{
     div{
         text-align: center;
@@ -21,14 +21,6 @@ main{
     text-indent: 4rem;
     text-align: left;
     padding: 1rem 1rem;
-}
-.font-rem-inicio {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Rubik', sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 .gridMainInicio {
     grid-area: section;

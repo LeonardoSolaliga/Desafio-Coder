@@ -1,0 +1,11 @@
+@mixin  flexbox($display,$aling,$justify) {
+    display: $display;
+    align-items: $aling;
+    justify-content: $justify;
+    
+    
+}
+.redes {
+    @include flexbox(flex,center ,end );
+    flex-wrap: wrap;
+}

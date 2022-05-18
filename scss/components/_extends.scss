@@ -1,0 +1,9 @@
+
+%flex{
+    display: flex;
+    align-items: center;
+}
+.Footer {
+    width: 100%;
+    @extend %flex;
+}

@@ -1,4 +1,6 @@
 @import "../components/clases";
+@import "../components/extends";
+@import "../components/mixin";
 /*Empieza el footer*/
 
 Footer {
@@ -15,21 +17,12 @@ Footer {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
 }
-.Footer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
+
 .NavFooter{
     display:grid;
     align-items: center;
 }
-.redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 .imgRedes{
     width:30px;
     height:auto;
