@@ -7,7 +7,7 @@ $fuente-inicio:(
     marginbottom: 2rem,
 );
 /*a la fuente le pongo su dato directamente porque no puedo ponerlo en el mapa*/
-.font-rem-inicio {
+.font-rem {
     color: map-get($fuente-inicio,color);
     text-align: map-get($fuente-inicio,centrar);
     font-size: map-get($fuente-inicio,tamanio-fuente);

@@ -1,10 +1,13 @@
 @import "../components/listas";
 @media screen and (max-width: 1087px) {
-    .gridGaleria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 600px;
-        gap: 1.5rem;
+    main{
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 600px;
+            gap: 1.5rem;
+        }
+    
     }
 
 
@@ -12,18 +15,25 @@
         width: nth($videowidth,2);
         height: nth($videoheigth,2);
     }
-
-
-
-
 }
 
 @media screen and (max-width: 960px) {
-    .gridGaleria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 600px;
-        gap: 1.5rem;
+    main{
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 500px;
+            gap: 1.5rem;
+        }
+    
+    }
+    .font-rem {
+        color: #00ADB5;
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
     #videocss {
         width: nth($videowidth,2);
@@ -33,21 +43,24 @@
 
 }
 
-@media screen and (max-width: 759px) {
-    .gridGaleria {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 500px;
-        gap: 1.5rem;
+@media screen and (max-width: 760px) {
+    main{
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 600px 600px;
+            gap: 1.5rem; 
+        }
+    
     }
 
-    .tituloInicio {
+    .titulo {
         font-size: 1.5rem;
     }
-    .font-rem-inicio {
+    .font-rem {
         color: #00ADB5;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-family: 'Rubik', sans-serif;
         margin-top: 1rem;
         margin-bottom: 2rem;
@@ -89,11 +102,14 @@
         height: nth($videoheigth,4);
     }
 
-    .gridGaleria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 400px;
-        gap: 1.5rem;
+    main{
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 400px;
+            gap: 1.5rem;
+        }
+    
     }
 
     .pieDePagina {
@@ -107,16 +123,15 @@
         grid-template-rows: auto;
     }
 
-    .redes{
-        display:flex;
-        flex-direction: column;
-    }
     
 
-    .tituloInicio {
+    .titulo{
         font-size: 1rem;
     }
 
+    .redes{
+        justify-content: center;
+    }
 
 
 
@@ -125,6 +140,26 @@
         margin-top: 0;
         margin-bottom: 1rem;
         font-family: 'Rubik', sans-serif;
+    }
+    main{
+        section{
+    
+            .contenedor{
+                .h3texto{
+                    color: #008086;
+                    font-size: 2rem;
+                    font-family: 'Rubik', sans-serif;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .gridNosotros{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-auto-rows: 400px;
+                    gap: 1.5rem;
+                }
+            }
+        }
     }
 
 
@@ -140,21 +175,24 @@
         height: nth($videoheigth,5);
     }
 
-    .gridGaleria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 320px;
-        gap: 1.5rem;
+    main{
+        .gridGaleria{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 320px;
+            gap: 1.5rem;
+        }
+    
     }
 
-    .tituloInicio {
+    .titulo{
         font-size: 1rem;
     }
     .agregarSangria {
         text-indent: 1rem;
     }
 
-    .font-rem-inicio {
+    .font-rem {
         color: #00ADB5;
         text-align: center;
         font-size: 0.8rem;
@@ -163,10 +201,6 @@
         margin-bottom: 1rem;
     }
 
-    .redes{
-        display:flex;
-        flex-direction: column;
-    }
 
 
     .logo {
@@ -204,5 +238,6 @@
         margin-bottom: 1rem;
         font-family: 'Rubik', sans-serif;
     }
+
 
 }
