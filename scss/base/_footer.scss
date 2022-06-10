@@ -8,6 +8,7 @@ Footer {
 }
 
 .pieDePagina {
+    z-index: 3;
     grid-area: footer;
     background-color: black;
     width: 100%;
@@ -16,18 +17,57 @@ Footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
+    @media screen and (max-width: 540px){
+        grid-area: footer;
+        background-color: black;
+        width: 100%;
+        padding: 2rem 0px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .Footer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      
+        p {
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: 'Rubik', sans-serif;
+        }
+    }
+    .NavFooter {
+        display: grid;
+        align-items: center;
+        .redes {
+            @include flexbox(flex,center ,end );
+            flex-wrap: wrap;
+            @media screen and (max-width: 540px) {
+                justify-content: center;
+            }
+            li{
+                .imgRedes {
+                    width: 30px;
+                    height: auto;
+                    @media screen and (max-width: 334px){
+                        width:20px;
+                        height:auto;
+                    }
+                }
+            }
+
+
+        }
+    }
 }
 
-.NavFooter{
-    display:grid;
-    align-items: center;
-}
 
-.imgRedes{
-    width:30px;
-    height:auto;
 
-}
+
 
 
 /*Termina el footer*/

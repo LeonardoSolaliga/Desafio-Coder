@@ -2,16 +2,9 @@
 $fuente-inicio:(
     color: #00ADB5,
     centrar: center,
-    tamanio-fuente: 1.5rem,
+    tamanio-fuente: 1.3rem,
     margintop: 2rem,
     marginbottom: 2rem,
+    sombra: 1px 1px 1px rgba(255, 255, 255, 0.377),
 );
 /*a la fuente le pongo su dato directamente porque no puedo ponerlo en el mapa*/
-.font-rem {
-    color: map-get($fuente-inicio,color);
-    text-align: map-get($fuente-inicio,centrar);
-    font-size: map-get($fuente-inicio,tamanio-fuente);
-    font-family: 'Rubik', sans-serif;
-    margin-top: map-get($fuente-inicio,margintop);
-    margin-bottom: map-get($fuente-inicio,marginbottom);
-}

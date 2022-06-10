@@ -1,6 +1,10 @@
 /*asdasdasd*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap");
+.disclaimer {
+  display: none;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -26,11 +30,10 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-family: "Rubik", sans-serif;
+body {
+  background-color: #1f1f1f;
+  height: 100%;
+  background-size: cover;
 }
 
 .gridContainer {
@@ -40,21 +43,8 @@ p {
 }
 
 /*Empieza el header*/
-header nav div div ul li {
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
-}
-header nav div div ul li a {
-  color: white;
-}
-header nav div div ul li a:visited {
-  color: orangered;
-}
-header nav div div ul li a:hover {
-  color: orange;
-}
-
 .sticky {
+  z-index: 3;
   grid-area: header;
   position: sticky;
   background-color: black;
@@ -64,19 +54,47 @@ header nav div div ul li a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
-
-.animacionTamanio:hover {
-  transform: scale(1.1);
-}
-
-.animacionDuracionTamanio {
-  transition-property: all;
-  transition-duration: 1.5s;
-}
-
-.logo {
+.sticky nav div .logo {
   width: 100px;
   height: auto;
+}
+@media screen and (max-width: 334px) {
+  .sticky nav div .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+.sticky nav div div ul .animacionTamanio {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.sticky nav div div ul .animacionTamanio:hover {
+  transform: scale(1.1);
+}
+.sticky nav div div ul .animacionTamanio a {
+  color: white;
+}
+.sticky nav div div ul .animacionTamanio a:visited {
+  color: orangered;
+}
+.sticky nav div div ul .animacionTamanio a:hover {
+  color: orange;
+}
+.sticky nav div div ul li {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+.sticky nav div div ul li a {
+  color: white;
+}
+.sticky nav div div ul li a:visited {
+  color: orangered;
+}
+.sticky nav div div ul li a:hover {
+  color: orange;
 }
 
 /*Termina el header*/
@@ -88,20 +106,11 @@ header nav div div ul li a:hover {
 }
 
 /*a la fuente le pongo su dato directamente porque no puedo ponerlo en el mapa*/
-.font-rem {
-  color: #00ADB5;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Rubik", sans-serif;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.gridMain {
+  grid-area: section;
 }
 
-main .contenedor {
-  text-align: center;
-}
-
-.titulo {
+main section div h1 {
   color: #00ADB5;
   font-size: 2.3rem;
   margin-top: 3%;
@@ -109,67 +118,193 @@ main .contenedor {
   text-align: center;
   align-content: center;
   font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
 }
-
-.agregarSangria {
-  text-indent: 4rem;
-  text-align: left;
-  padding: 1rem 1rem;
+main section .centrar {
+  text-align: center;
+  padding: 0px 10rem;
 }
-
-.gridMain {
-  grid-area: section;
+@media screen and (max-width: 960px) {
+  main section .centrar {
+    padding: 0px 7rem;
+  }
 }
-
-.body-Inicio {
-  background-image: url("../src/Images/fondo-gym2.jpg");
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+@media screen and (max-width: 760px) {
+  main section .centrar {
+    padding: 0px 4rem;
+  }
 }
-
-#videocss {
+@media screen and (max-width: 540px) {
+  main section .centrar {
+    padding: 0px 0rem;
+  }
+}
+main section .centrar .font-rem {
+  color: #00ADB5;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
+main section .contenedor {
+  text-align: center;
+}
+main section .contenedor #videocss {
   width: 800px;
   height: 600px;
+}
+@media screen and (max-width: 1087px) {
+  main section .contenedor #videocss {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 960px) {
+  main section .contenedor #videocss {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 760px) {
+  main section .contenedor #videocss {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  main section .contenedor #videocss {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 334px) {
+  main section .contenedor #videocss {
+    width: 200px;
+    height: 150px;
+  }
+}
+main section article .font-rem {
+  color: #00ADB5;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
 }
 
 /*Termina el body*/
 /*body galeria*/
+main div h1 {
+  color: #00ADB5;
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  align-content: center;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
 main .gridGaleria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 600px 600px;
   gap: 1.5rem;
+  padding: 2rem;
+}
+@media screen and (max-width: 1087px) {
+  main .gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 600px;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  main .gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 500px;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  main .gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px 600px;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 334px) {
+  main .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 320px;
+    gap: 1.5rem;
+  }
 }
 main .gridGaleria .galeria-img {
+  animation: flipInX;
+  animation-duration: 1s;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.bodyPages {
-  background-color: #1f1f1f;
-  height: 100%;
-  background-size: cover;
-}
-
 /*termina body galeria*/
 /*Body Contacto*/
+main div h1 {
+  color: #00ADB5;
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  align-content: center;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
 main .containerFormulario {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main .containerFormulario form .separacion {
+main .containerFormulario .encerrador {
+  background: rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  border: white;
+  border-radius: 1%;
+}
+main .containerFormulario .encerrador .separacion {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 60vw;
 }
+main .containerFormulario .encerrador .separacion .font-rem {
+  color: #00ADB5;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
 main .contenedor {
   text-align: center;
+  padding: 2rem;
 }
 main .contenedor .boton {
   border-radius: 1rem;
@@ -177,6 +312,9 @@ main .contenedor .boton {
   display: inline-block;
   text-decoration: none;
   color: white;
+  font-size: 1.3rem;
+  margin-top: 0;
+  font-family: "Rubik", sans-serif;
 }
 main .contenedor .boton-color {
   background-color: orangered;
@@ -187,30 +325,177 @@ main .contenedor .boton-color:hover {
 
 /*Termina el body Contacto*/
 /*Body FAQs*/
-main section article .h4textoNaranja {
+.mainFaqs {
+  padding: 4rem;
+}
+@media screen and (max-width: 540px) {
+  .mainFaqs {
+    padding: 0rem;
+  }
+}
+.mainFaqs div h1 {
+  color: #00ADB5;
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  align-content: center;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
+.mainFaqs section .centrado {
+  text-align: center;
+}
+.mainFaqs section .centrado div h4 {
   color: orangered;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-family: "Rubik", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-main section article div h6 {
-  color: #008086;
-  font-size: 1.4rem;
-  font-family: "Rubik", sans-serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.textoBlanco {
+.mainFaqs section .centrado .textoBlanco {
   color: white;
+  padding: 0px 6rem;
+}
+@media screen and (max-width: 960px) {
+  .mainFaqs section .centrado .textoBlanco {
+    padding: 0px 3rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mainFaqs section .centrado .textoBlanco {
+    padding: 0px 0rem;
+  }
+}
+.mainFaqs section .centrado .textoBlanco p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item h6 .accordion-button {
+  position: static;
+  background: rgba(0, 0, 0, 0.24);
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item h6 .accordion-button h6 {
+  color: #008086;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item h6 .accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item div .textoBlanco {
+  color: white !important;
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 960px) {
+  .mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item div .textoBlanco {
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item div .textoBlanco {
+    padding: 0px 0rem;
+  }
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample .accordion-item div .textoBlanco p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample div .textoBlanco {
+  color: white;
+  padding: 0px 10rem;
+}
+@media screen and (max-width: 960px) {
+  .mainFaqs section .centrado #accordionPanelsStayOpenExample div .textoBlanco {
+    padding: 0px 7rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mainFaqs section .centrado #accordionPanelsStayOpenExample div .textoBlanco {
+    padding: 0px 4rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .mainFaqs section .centrado #accordionPanelsStayOpenExample div .textoBlanco {
+    padding: 0px 0rem;
+  }
+}
+.mainFaqs section .centrado #accordionPanelsStayOpenExample div .textoBlanco p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.mainFaqs section .centrado div p {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.mainFaqs section .centrado div a {
+  color: orangered;
+  text-decoration: underline;
+}
+.mainFaqs section .centrado div a:hover {
+  color: orange;
 }
 
 /*Termina body FAQs*/
 /*body Sobre nosotros*/
-main section .contenedor .h3texto {
+main div h1 {
+  color: #00ADB5;
+  font-size: 2.3rem;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  align-content: center;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.377);
+}
+main .centrado {
+  text-align: center;
+}
+main .centrado .textoBlanco {
+  color: white;
+  padding: 0px 10rem;
+}
+@media screen and (max-width: 960px) {
+  main .centrado .textoBlanco {
+    padding: 0px 7rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  main .centrado .textoBlanco {
+    padding: 0px 4rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .centrado .textoBlanco {
+    padding: 0px 0rem;
+  }
+}
+main .centrado .textoBlanco p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+main section .contenedor {
+  text-align: center;
+}
+main section .contenedor h3 {
   color: #008086;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Rubik", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -221,8 +506,23 @@ main section .contenedor .gridNosotros {
   grid-template-rows: 400px 400px;
   gap: 1.5rem;
 }
+@media screen and (max-width: 540px) {
+  main section .contenedor .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+    gap: 1.5rem;
+  }
+}
 main section .contenedor .gridNosotros div #imagen {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+main section .contenedor .gridNosotros div div p {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
 }
 main section .contenedor .gridNosotros div .entrenador-img {
   object-fit: cover;
@@ -240,18 +540,11 @@ main section .contenedor .gridNosotros div .alejarTexto {
 
 .Footer {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .Footer {
   width: 100%;
-}
-
-.redes {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  flex-wrap: wrap;
 }
 
 /*Empieza el footer*/
@@ -260,6 +553,7 @@ Footer {
 }
 
 .pieDePagina {
+  z-index: 3;
   grid-area: footer;
   background-color: black;
   width: 100%;
@@ -269,99 +563,7 @@ Footer {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
 }
-
-.NavFooter {
-  display: grid;
-  align-items: center;
-}
-
-.imgRedes {
-  width: 30px;
-  height: auto;
-}
-
-/*Termina el footer*/
-@media screen and (max-width: 1087px) {
-  main .gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 600px;
-    gap: 1.5rem;
-  }
-
-  #videocss {
-    width: 600px;
-    height: 400px;
-  }
-}
-@media screen and (max-width: 960px) {
-  main .gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 500px;
-    gap: 1.5rem;
-  }
-
-  .font-rem {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 1.3rem;
-    font-family: "Rubik", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #videocss {
-    width: 600px;
-    height: 400px;
-  }
-}
-@media screen and (max-width: 760px) {
-  main .gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600px 600px;
-    gap: 1.5rem;
-  }
-
-  .titulo {
-    font-size: 1.5rem;
-  }
-
-  .font-rem {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: "Rubik", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  #videocss {
-    width: 500px;
-    height: 300px;
-  }
-
-  header nav div div ul li {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Rubik", sans-serif;
-  }
-}
 @media screen and (max-width: 540px) {
-  #videocss {
-    width: 250px;
-    height: 150px;
-  }
-
-  main .gridGaleria {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 400px;
-    gap: 1.5rem;
-  }
-
   .pieDePagina {
     grid-area: footer;
     background-color: black;
@@ -372,89 +574,44 @@ Footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
-  .titulo {
-    font-size: 1rem;
-  }
-
-  .redes {
+}
+.pieDePagina .Footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.pieDePagina .Footer p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+.pieDePagina .NavFooter {
+  display: grid;
+  align-items: center;
+}
+.pieDePagina .NavFooter .redes {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 540px) {
+  .pieDePagina .NavFooter .redes {
     justify-content: center;
   }
-
-  p {
-    font-size: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: "Rubik", sans-serif;
-  }
-
-  main section .contenedor .h3texto {
-    color: #008086;
-    font-size: 2rem;
-    font-family: "Rubik", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  main section .contenedor .gridNosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 400px;
-    gap: 1.5rem;
-  }
+}
+.pieDePagina .NavFooter .redes li .imgRedes {
+  width: 30px;
+  height: auto;
 }
 @media screen and (max-width: 334px) {
-  #videocss {
-    width: 200px;
-    height: 150px;
-  }
-
-  main .gridGaleria {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 320px;
-    gap: 1.5rem;
-  }
-
-  .titulo {
-    font-size: 1rem;
-  }
-
-  .agregarSangria {
-    text-indent: 1rem;
-  }
-
-  .font-rem {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 0.8rem;
-    font-family: "Rubik", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .logo {
-    width: 100px;
-    height: auto;
-  }
-
-  header nav div div ul li {
-    color: #00ADB5;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Rubik", sans-serif;
-  }
-
-  .imgRedes {
+  .pieDePagina .NavFooter .redes li .imgRedes {
     width: 20px;
     height: auto;
   }
-
-  p {
-    font-size: 0.7rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: "Rubik", sans-serif;
-  }
 }
+
+/*Termina el footer*/
 
 /*# sourceMappingURL=style.css.map */
